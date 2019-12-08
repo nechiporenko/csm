@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <title>Search Page</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="description" content="Page Description">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
+    <style>
+        /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}main{display:block}h1{font-size:2em;margin:.67em 0}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details{display:block}summary{display:list-item}template{display:none}[hidden]{display:none}
+    </style>
+    <link rel="stylesheet" href="css/app.min.css">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!--[if lt IE 9]>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+</head>
+<body class="site">
+    <!--HEADER-->
+        <header class="site__header js-header">
+        <div class="site__header--top h-top js-header-top">
+            <div class="g-container">
+                <figure class="h-top__inner">
+                    <div class="h-top__search h-search">
+                        <a href="search.html" class="h-search__btn">
+                            <i class="icon-search"></i>
+                        </a>
+                    </div>
+                    <ul class="h-top__action h-action">
+                        <li class="h-action__item">
+                            <a href="tel:+380441112233" class="h-action__link">
+                                <span class="h-action__icon">
+                                    <i class="icon-telephone"></i>
+                                </span>
+                                <span class="h-action__text">(044) 111-22-33</span>
+                            </a>
+                        </li>
+                        <li class="h-action__item">
+                            <a href="consultation.html" class="h-action__link">
+                                <span class="h-action__icon">
+                                    <i class="icon-sick"></i>
+                                </span>
+                                <span class="h-action__text">Запис до лікаря</span>
+                            </a>
+                        </li>
+                    </ul>
+                </figure>
+            </div>
+        </div>
+        <div class="site__header--main h-main js-header-main">
+            <div class="g-container">
+                <div class="h-main__inner">
+                    <figure class="h-main__logo h-logo">
+                        <a href="index.html" class="h-logo__link">
+                            <span class="h-logo__icon">
+                                <i class="icon-hospital"></i>
+                            </span>
+                            УМЦСМ
+                        </a>
+                    </figure>
+                    <nav class="h-main__nav js-menu">
+    <button type="button" class="h-main__mclosebtn js-menuclose-btn">
+        <i class="icon-close"></i> Меню
+    </button>
+    <ul class="h-main__menu h-menu">
+        <li class="h-menu__item">
+            <a href="about.html" class="h-menu__link">Про нас</a>
+        </li>
+        <li class="h-menu__item">
+            <a href="#" class="h-menu__link">Послуги</a>
+            <ul class="h-menu__submenu">
+                <li class="h-menu__submenu__item">
+                    <a href="#" class="h-menu__submenu__link">Послуга 1</a>
+                </li>
+                <li class="h-menu__submenu__item">
+                    <a href="#" class="h-menu__submenu__link">Послуга 2</a>
+                </li>
+                <li class="h-menu__submenu__item">
+                    <a href="#" class="h-menu__submenu__link">Послуга з довгою назвою&nbsp;3</a>
+                </li>
+                <li class="h-menu__submenu__item">
+                    <a href="#" class="h-menu__submenu__link">Послуга з дуже, дуже довгою назвою 4</a>
+                </li>
+                <li class="h-menu__submenu__item">
+                    <a href="#" class="h-menu__submenu__link">Послуга 5</a>
+                </li>
+                <li class="h-menu__submenu__item">
+                    <a href="#" class="h-menu__submenu__link">Послуга 6</a>
+                </li>
+            </ul>
+        </li>
+        <li class="h-menu__item">
+            <a href="#" class="h-menu__link">Переваги</a>
+            <ul class="h-menu__submenu">
+                <li class="h-menu__submenu__item">
+                    <a href="#" class="h-menu__submenu__link">Перевага 1</a>
+                </li>
+                <li class="h-menu__submenu__item">
+                    <a href="#" class="h-menu__submenu__link">Перевага 2</a>
+                </li>
+                <li class="h-menu__submenu__item">
+                    <a href="#" class="h-menu__submenu__link">Перевага з довгою назвою&nbsp;3</a>
+                </li>
+                <li class="h-menu__submenu__item">
+                    <a href="#" class="h-menu__submenu__link">Перевага з дуже, дуже довгою назвою 4</a>
+                </li>
+            </ul>
+        </li>
+        <li class="h-menu__item">
+            <a href="#" class="h-menu__link">Лікарі</a>
+        </li>
+        <li class="h-menu__item">
+            <a href="#" class="h-menu__link">Новини</a>
+        </li>
+        <li class="h-menu__item">
+            <a href="consultation.html" class="h-menu__link">Консультація</a>
+        </li>
+        <li class="h-menu__item">
+            <a href="#" class="h-menu__link">Контакти</a>
+        </li>
+    </ul>
+</nav>
+                    <button type="button" class="h-main__mopenbtn js-menuopen-btn">
+                        <i class="icon-menu"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--/HEADER-->
+	<!--MAIN CONTENT-->
+    <main class="site__content">
+        <!--SEO CONTENT BLOCK-->
+        <div class="site__section site__section--seo">
+            <article class="g-container">
+                <h1 class="g-title g-text-center">SEO Title</h1>
+                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, <code>commodo vitae</code>, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. <a href="#">Donec non enim</a> in turpis pulvinar facilisis. Ut felis.</p>
+                <ul>
+                    <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+                    <li>Aliquam tincidunt mauris eu risus.</li>
+                    </ul>
+                    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+            </article>
+        </div>
+        <!--/SEO CONTENT BLOCK-->
+        <div class="site__section">
+            <div class="g-container">
+                <span class="g-title">Пошук по сайту</span>
+                <form class="g-form">
+                    <div class="g-form__row">
+                        <span class="g-form__addon">
+                            <i class="icon-search"></i>
+                        </span>
+                        <input type="search" class="g-form__input" name="s" placeholder="Що потрібно знайти?" />
+                    </div>
+                    <button type="submit" class="g-btn">Шукати</button>
+                </form>
+            </div>
+        </div>
+    </main>
+	<!--/MAIN CONTENT-->
+
+    <!--FOOTER-->
+        <footer class="site__footer f-footer">
+        <div class="g-container">
+            <div class="g-row">
+                <div class="g-col g-col__3">
+                    <span class="f-footer__title">Контакти</span>
+                    <ul class="f-footer__list f-list">
+                        <li class="f-list__item">
+                            <i class="icon-cross"></i> 01033, Україна, Київ, вул. Тарасівська, 6
+                        </li>
+                        <li class="f-list__item">
+                            <a href="tel:+380441112233" class="f-list__link">
+                                <i class="icon-telephone"></i> (044) 111-22-33
+                            </a>
+                        </li>
+                        <li class="f-list__item">
+                            <a href="mailto:yourmail@domain.com" class="f-list__link">
+                                <i class="icon-email"></i> yourmail@domain.com
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="g-col g-col__3">
+                    <span class="f-footer__title">Останні новини</span>
+                    <ul class="f-footer__list f-list">
+                        <li class="f-list__item"><a href="#" class="f-list__link">Pellentesque fermentum dolor. Aliquam quam lectus, facilisis auctor.</a></li>
+                        <li class="f-list__item"><a href="#" class="f-list__link">Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. </a></li>
+                        <li class="f-list__item"><a href="#" class="f-list__link">Donec consectetuer ligula vulputate sem tristique cursus.</a></li>
+                    </ul>
+                </div>
+                <div class="g-col g-col__3">
+                    <span class="f-footer__title">Ми у соцмережах</span>
+                    <ul class="f-footer__social f-social">
+                        <li class="f-social__item">
+                            <a href="#" class="f-social__link">
+                                <i class="icon-facebook"></i>
+                            </a>
+                        </li>
+                        <li class="f-social__item">
+                            <a href="#" class="f-social__link">
+                                <i class="icon-twitter"></i>
+                            </a>
+                        </li>
+                        <li class="f-social__item">
+                            <a href="#" class="f-social__link">
+                                <i class="icon-instagram"></i>
+                            </a>
+                        </li>
+                        <li class="f-social__item">
+                            <a href="#" class="f-social__link">
+                                <i class="icon-youtube"></i>
+                            </a>
+                        </li>
+                        <li class="f-social__item">
+                            <a href="#" class="f-social__link">
+                                <i class="icon-rss"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="f-footer__sole">
+                <span>2019 © yourdomain.com. Всі права захищено</span>
+            </div>
+        </div>
+        <button type="button" class="f-footer__scroll_btn js-scroll_btn">
+            <i class="icon-up-chevron"></i>
+        </button>
+    </footer>
+    <!--/FOOTER-->
+
+    <!--scripts-->
+    <script>
+        WebFontConfig = {
+            google: {
+                families: ['Lora:700:cyrillic', 'Fira Sans:400,500:cyrillic']
+            },
+            active: function () {
+                sessionStorage.font_GOS = true;
+            }
+        };
+        (function (d) {
+            var wf = d.createElement('script'), s = d.scripts[0];
+            wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js';
+            wf.async = true;
+            s.parentNode.insertBefore(wf, s);
+        })(document);
+    </script>
+    <script src="js/app.min.js" defer></script>
+    <!--/scripts-->
+</body>
+</html>

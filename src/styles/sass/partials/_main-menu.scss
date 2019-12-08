@@ -1,0 +1,174 @@
+/*Menu wrapper, overlay, close button*/
+.h-main__nav{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: -256px;
+    width: 256px;
+    min-height: 100vh;
+    overflow-y: auto;
+    z-index: 1200;
+    background-color: $primary-alt;
+    will-change: transform;
+    transition: .3s transform;
+    box-sizing: border-box;
+
+    &.active{
+        transform: translateX(-256px);
+    }
+}
+
+.js-overlay{
+    position: fixed;
+    left: 0; right: 0; bottom: 0;
+    z-index: 1100;
+    background-color: rgba(0,0,0, .7);
+    display: none;
+
+    &.active{
+        top:0;
+        display: block;
+    }
+}
+
+.h-main__mclosebtn{
+    display: block;
+    width:100%;
+    height: 40px;
+    padding: 0 10px;
+    line-height: 40px;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 1px dotted #ddd;
+    background-color: transparent;
+    text-align: left;
+    text-transform: uppercase;
+    color:#fff;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+@media screen and (min-width: $desktop){
+    .h-main__nav{
+        width: unset;
+        position: static;
+        top:inherit;
+        top:unset;
+        bottom: inherit;
+        bottom: unset;
+        right: 0;
+        min-height: auto;
+        min-height: unset;
+        overflow-y: visible;
+        overflow-y: unset;
+        background-color: transparent;
+        transform: none;
+
+        &.active{
+            transform: none;
+        }
+    }
+    .js-overlay,
+    .js-overlay.active{
+        top:unset;
+        display: none;
+    }
+    .h-main__mclosebtn{
+        display: none;
+    }
+}
+
+/*Menu, submenu*/
+.h-menu,
+.h-menu__submenu{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.h-menu__link,
+.h-menu__submenu__link{
+    display: block;
+    font-weight: 500;
+    line-height: 1.1;
+    text-decoration: none;
+    color:#fff;
+    border-bottom: 1px dotted #ddd;
+    @extend .g-transition;
+    transition-property: color;
+
+    &:hover,
+    &:active,
+    &.current{
+        color:$primary;
+    }
+}
+
+.h-menu__link{
+    padding: 8px 10px;
+    font-size: 18px;
+}
+
+.h-menu__submenu{
+    box-sizing: border-box;
+    @extend .g-transition;
+    transition-property: opacity, transform;
+}
+
+.h-menu__submenu__link{
+    padding: 8px 10px 8px 15px;
+    font-size: 15px;
+}
+
+@media screen and (min-width: $desktop){
+    .h-menu__item{
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: $gutter;
+        position: relative;
+
+        &:hover{
+            .h-menu__submenu{
+                visibility: visible;
+                opacity: 1;
+                transform: translateX(20px);
+            }
+        }
+    }
+
+    .h-menu__link{
+        height: 68px;
+        line-height: 68px;
+        padding: 0;
+        font-size: 18px;
+        font-weight: 500;
+        color:$primary-alt;
+        text-transform: uppercase;
+        border: none;
+    }
+
+    .h-menu__submenu{
+        position: absolute;
+        right: 0;
+        z-index: 100;
+        top:100%;
+        width: 100%;
+        padding: $gutter 0;
+        border-top:3px solid $primary;
+        min-width: 220px;
+        visibility: hidden;
+        opacity: 0;
+        text-align: right;
+        background-color: $primary-alt;
+        box-shadow: 0 1px 3px -1px rgba(0,0,0,.2);
+    }
+
+    .h-menu__submenu__item{
+        padding: 5px $gutter;
+    }
+    .h-menu__submenu__link{
+        padding: 0;
+        border: none;
+    }
+}

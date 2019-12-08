@@ -1,0 +1,142 @@
+.site__header{
+    position: relative;
+    z-index: 1000;
+}
+/*Header Top*/
+.h-top{
+    padding:2px 0;
+    background-color: $primary-alt;
+}
+.h-top__inner{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content:space-between;
+}
+
+.h-search__btn,
+.h-main__mopenbtn,
+.h-action__icon{
+    display: inline-block;
+    vertical-align: middle;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    font-size: 18px;
+    color:#fff;
+    @extend .g-transition;
+
+    @media screen and (min-width:$tablet){
+        height: 48px;
+        width: 48px;
+        line-height: 48px;
+        font-size: 26px;
+    }
+}
+
+.h-search__btn,
+.h-main__mopenbtn{
+    border:0;
+    background-color: lighten($primary-alt, 2%);
+    cursor: pointer;
+    transition-property: background-color;
+
+    &:hover{
+        background-color: $primary;
+    }
+}
+
+.h-search__btn{
+    text-decoration: none;
+}
+
+.h-action{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+.h-action__item{
+    display: block;
+    margin-left: 2*$gutter;
+}
+.h-action__link{
+    display: block;
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    @extend .g-transition;
+    transition-property: color;
+    
+    &:hover{
+        color:$primary;
+
+    }
+}
+.h-action__icon{
+    border-radius: 50%;
+    background-color: $primary;
+    transition-property: color, background-color;
+
+    .h-action__link:hover &{
+        background-color: #fff;
+        color:$primary;
+    }
+}
+
+.h-action__text{
+    display: none;
+    font-weight: 500;
+
+    @media screen and (min-width:$tablet){
+        display: inline;
+    }
+}
+
+/*Header Main*/
+.h-main{
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 1px 1px 1px rgba(0,0,0,.2);
+}
+.h-main__inner{
+    height: 68px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.h-logo{
+    margin: 0;
+    padding: 0;
+    height: 50px;
+    line-height: 50px;
+}
+.h-logo__link{
+    display: block;
+    font-size: 32px;
+    color:$primary;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.h-main__mopenbtn{
+    @media screen and (min-width:$desktop){
+        display: none;
+    }
+}
+
+/*Sticky Header*/
+.site__header.sticky{
+    @media screen and (min-width: $large){
+        .h-main{
+            position: fixed;
+            top:0;
+            left: 0;
+        }
+        .js-wrap{
+            height: 68px;
+        }
+    }
+}

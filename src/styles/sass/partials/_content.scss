@@ -1,0 +1,30 @@
+.site__section{
+    padding:3*$gutter 0;
+    font-size: 16px;
+    line-height: 1.5;
+
+    a{
+        color:$primary;
+        @extend .g-transition;
+        transition-property: color;
+
+        &:hover{
+            color:darken($primary, 5%);
+        }
+        &:active{
+            color:darken($primary, 10%);
+        }
+        &:visited{
+            color:darken($primary, 15%);
+        }
+    }
+}
+
+.site__section--seo{
+    order: 1;
+}
+
+.site__section--alt{
+    background-color: #fff;
+}
+

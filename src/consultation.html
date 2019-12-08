@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <title>Consultation Page</title>
+    @@include('templates/head.html')
+</head>
+<body class="site">
+    <!--HEADER-->
+    @@include('templates/header.html')
+    <!--/HEADER-->
+	<!--MAIN CONTENT-->
+    <main class="site__content">
+        <!--SEO CONTENT BLOCK-->
+        <div class="site__section site__section--seo">
+            <article class="g-container">
+                <h1 class="g-title g-text-center">SEO Title</h1>
+                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, <code>commodo vitae</code>, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. <a href="#">Donec non enim</a> in turpis pulvinar facilisis. Ut felis.</p>
+                <ul>
+                    <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+                    <li>Aliquam tincidunt mauris eu risus.</li>
+                    </ul>
+                    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+            </article>
+        </div>
+        <!--/SEO CONTENT BLOCK-->
+        <div class="site__section">
+            <div class="g-container">
+                <span class="g-title">Отримати консультацію лікаря</span>
+                <p>Заповніть поля форми, і ми зв'яжемося з вами найближчим часом</p>
+                <form class="g-form">
+                    <div class="g-form__row">
+                        <span class="g-form__addon">
+                            <i class="icon-broken-arm"></i>
+                        </span>
+                        <input type="text" class="g-form__input" placeholder="Як Вас звати?" />
+                    </div>
+                    <div class="g-form__row">
+                        <span class="g-form__addon">
+                            <i class="icon-telephone"></i>
+                        </span>
+                        <input type="text" class="g-form__input" placeholder="Ваш контактний номер?" />
+                    </div>
+                    <button type="submit" class="g-btn">Надіслати</button>
+                </form>
+            </div>
+        </div>
+    </main>
+	<!--/MAIN CONTENT-->
+
+    <!--FOOTER-->
+    @@include('templates/footer.html')
+</body>
+</html>

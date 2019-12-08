@@ -1,0 +1,101 @@
+@import "base";
+
+/*Main styles*/
+:focus{
+    outline:0;
+}
+
+audio,
+canvas,
+img,
+video {
+    vertical-align: middle;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* Base Styles */
+html{
+    height: 100%;
+}
+
+.site{
+    height: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Arial', sans-serif;
+    background-color: #ecf0f1;
+
+    .wf-active &{
+        font-family: $font-regular, sans-serif;
+    }
+}
+
+.site__content{
+    flex: 1 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+.site__header,
+.site__footer{
+    flex-shrink:0;
+}
+.site__footer{
+    margin-top:auto;
+}
+
+/* Typography*/
+h1, h2, h3, h4, h5, h6, .g-title, .g-subtitle{
+    margin-top: 0;
+    margin-bottom:$project-line-height;
+    line-height:1.1;
+    color:$title-color;
+    font-family: serif;
+    font-weight: 700;
+  
+    .wf-active &{
+        font-family: $font-title, serif;
+    }
+}
+
+
+.g-title{
+    display:block;
+    font-size:32px;
+}
+.g-subtitle{
+    display:block;
+    font-size:24px;
+}
+.g-text-center{
+    text-align: center;
+}
+
+
+
+/* Misc */
+hr {
+    margin: $project-line-height 0;
+    border-width: 0;
+    border-top: 1px solid $border-color;
+}
+
+/* Transitions */
+.g-transition{
+	transition-duration:.2s;
+    transition-timing-function:ease;
+}

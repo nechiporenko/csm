@@ -1,0 +1,54 @@
+.g-tile{
+    padding:2*$gutter $gutter;
+    margin: 0;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
+    box-sizing: border-box;
+    min-height: 100%;
+}
+.g-tile__title{
+    @extend .g-subtitle;
+}
+
+.g-tile__icon,
+.g-tile__num,
+.g-tile__photo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:0 auto $gutter;
+    background-color: #bdc3c7;
+    color:$primary;
+}
+
+.g-tile__icon{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    font-size: 64px; 
+}
+
+.g-tile__num{
+    width:80px;
+    height: 50px;
+    box-sizing: border-box;
+    font-size: 48px;
+    font-weight: 500;
+}
+.g-tile__photo{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+}
+.g-tile__img{
+    width: 100%;
+    border-radius: 50%;
+}
+.g-tile__link{
+    color:$primary;
+    text-decoration: none;
+    white-space: nowrap;
+    text-transform: uppercase;
+    font-weight: 500;
+}

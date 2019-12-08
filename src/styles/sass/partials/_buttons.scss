@@ -1,0 +1,48 @@
+.g-btn{
+    display: inline-block;
+    vertical-align: middle;
+    height: 50px;
+    line-height: 50px;
+    border:0;
+    padding: 0 15px;
+    border-radius: 3px;
+    text-align: center;
+    white-space: nowrap;
+    background-color: $primary;
+    color:#fff !important;
+    text-decoration: none;
+    text-shadow: .5px .5px .5px rgba(0,0,0,.75);
+    font-size: 15px;
+    font-weight: 500;
+    position: relative;
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
+    @extend .g-transition;
+    transition-property: box-shadow;
+
+    &:before{
+        content: '';
+        position: absolute;
+        z-index: -1;
+        top:0; right: 0; bottom: 0; left: 0;
+        transform:scaleX(0);
+        transform-origin: 50%;
+        background-color: darken($primary, 15%);
+        @extend .g-transition;
+        transition-property: transform;
+    }
+
+    &:hover{
+        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+        &:before{
+            transform: scaleX(1);
+        }
+    }
+}
+
+@media screen and (min-width:$small){
+    .g-btn{
+        padding: 0 30px;
+        font-size: 18px;
+    }
+}

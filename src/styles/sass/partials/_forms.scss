@@ -1,0 +1,39 @@
+.g-form{
+    max-width: 800px;
+    margin-bottom: 2*$gutter;
+}
+
+.g-form__row{
+    display: flex;
+    margin-bottom: $gutter;
+}
+
+.g-form__input{
+    display: block;
+    flex: 1;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 $gutter;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    font-size: 15px;
+    color:$primary-alt;
+    background-color: #fff;
+    @extend .g-transition;
+    transition-property: box-shadow;
+
+    &:focus{
+        box-shadow: inset 2px 2px 10px rgba(gray,.3);
+    }
+}
+
+.g-form__addon{
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 $gutter;
+    box-sizing: border-box;
+    background-color: $primary-alt;
+    color:#fff;
+    text-align: center;
+}

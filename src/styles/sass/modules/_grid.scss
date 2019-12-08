@@ -1,0 +1,53 @@
+@import "grid-settings";
+
+.g-container{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: $gutter;
+    padding-right: $gutter;
+    box-sizing: border-box;
+
+    @media screen and (min-width:$tablet){
+        max-width: 750px;
+    }
+    @media screen and (min-width:$desktop){
+        max-width: 970px;
+    }
+    @media screen and (min-width:$large){
+        max-width: 1150px;
+    }
+}
+
+.g-row{
+    margin-left: -$gutter;
+    margin-right: -$gutter;
+    box-sizing: border-box;
+
+    @media screen and (min-width: $desktop){
+        display: flex;
+    }
+}
+
+.g-col{
+    width: 100%;
+    padding-left: $gutter;
+    padding-right: $gutter;
+    box-sizing: border-box;
+    margin-bottom: 2*$gutter;
+
+    @media screen and (min-width: $desktop){
+        &.g-col__2{
+            flex: 0 0 50%;
+        }
+
+        &.g-col__3{
+            flex: 0 0 33.3333%;
+        }
+
+        &.g-col__4{
+            flex: 0 0 25%;
+        }
+    }
+}
+
